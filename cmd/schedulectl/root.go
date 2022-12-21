@@ -142,8 +142,8 @@ func NewCmd() *cobra.Command {
 		},
 	}
 
-	rootCmd.PersistentFlags().StringVarP(&members, "member", "m", "", "指定成员,多个用逗号分割")
-	rootCmd.PersistentFlags().StringVarP(&fileName, "filename", "f", "", "指定成员文件")
+	rootCmd.PersistentFlags().StringVarP(&members, "member", "m", "", "直接通过命令行指定值班人员,多个用逗号分割")
+	rootCmd.PersistentFlags().StringVarP(&fileName, "filename", "f", "", "通过文件指定值班人员")
 	rootCmd.PersistentFlags().StringVarP(&outputFileName, "output", "o", outputDefault, "指定输出文件名")
 	return rootCmd
 }
